@@ -1,0 +1,97 @@
+
+
+html{
+  font-size: 24px;
+  margin: 0 30px;
+}
+body{
+  background-color:white;
+  margin:0 30px;
+
+
+}
+
+/*Navigation underline*/
+nav ul{
+  width: 100%;
+
+}
+
+nav a{
+  color: white;
+  padding: 10px;
+  float: left;
+margin-left: 10px;
+  width: 100%;
+
+
+}
+
+/*All UL Statement*/
+ul{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  background-color: #3CB371;
+
+}
+
+/*The body div tag id = "body"*/
+#body{
+  padding: 20px;
+}
+
+/*Footer statement*/
+footer{
+  positon: absolute;
+  margin-top: 380px ;
+  bottom: 0;
+  width: 100%;
+  height: 130px;
+  background-color:#3CB371;
+  text-align: center;
+  margin-left: 0;
+
+}
+
+footer a,small{
+  color: white;
+
+}
+
+/*When the screen is less than 680 pixels wides,
+  hide all list items, except for the first one*/
+@media screen and (max-width: 680px) {
+  ul#navbar li:not(:first-child){
+    display:none;
+  }
+  ul#navbar li.icon{
+    float: right;
+    display: inline-block;
+  }
+
+}
+
+
+/*The "repsonsive" class is added to the navbar width
+  javascript when the u ser clicks on the icon.*/
+@media screen and (max-width:680px){
+  ul#navbar.repsonsive {
+      position: relative;
+  }
+  ul#navbar.repsonsive li.icon{
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
+  ul#navbar.repsonsive li{
+    float: none;
+    display: inline;
+  }
+  ul#navbar.repsonsive li a{
+    display: block;
+    text-align: left;
+  }
+
+}
