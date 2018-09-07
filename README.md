@@ -1,3 +1,5 @@
 # AD410
 
-A sample webpage for client: 
+A sample webpage for client: PopSmartKids
+
+<img src="images/website_homepage.JPG" width="300px">
